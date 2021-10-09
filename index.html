@@ -25,6 +25,130 @@
       />
     </div>
 
+    <article>
+      <form
+        class="form-card"
+        name="userInfoForm"
+        onsubmit="validateForm()"
+        method="post"
+      >
+        <div style="text-align: center; margin-bottom: 40px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+          euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
+          Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
+          Nullam et congue quam. Quisque luctus egestas gravida. Quisque
+          maximus, diam non vehicula imperdiet, nunc purus dapibus est, eu
+          efficitur orci dolor eu turpis.
+        </div>
+
+        <article style="margin-bottom: 30px">
+          <section
+            style="
+              display: grid;
+              align-items: center;
+              margin-bottom: 20px;
+              grid-template-columns: auto auto 1fr;
+            "
+          >
+            <img src="assets/icons/question.svg" alt="question" />
+            <h1>
+              Name one lottery game that you can beat on
+              <a href="https://lottostar.co.za/" target="_blank"
+                >lottostar.co.za</a
+              >
+            </h1>
+            <div class="divider-line"></div>
+          </section>
+
+          <div style="max-width: 397px">
+            <input
+              class="input"
+              placeholder="e.g lottery"
+              name="lotteryGame"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </article>
+
+        <article style="margin-bottom: 30px">
+          <section
+            style="
+              display: grid;
+              align-items: center;
+              margin-bottom: 20px;
+              grid-template-columns: auto auto 1fr;
+            "
+          >
+            <img src="assets/icons/pencil.svg" alt="question" />
+            <h1>Tell us who you are</h1>
+            <div class="divider-line"></div>
+          </section>
+
+          <section class="user-info-input-grid">
+            <input
+              class="input"
+              placeholder="id number"
+              name="idNumber"
+              type="number"
+              autocomplete="off"
+              minlength="13"
+              required
+            />
+            <input
+              class="input"
+              placeholder="name"
+              name="firstname"
+              required
+              autocomplete="off"
+            />
+            <input
+              class="input"
+              placeholder="surname"
+              name="surname"
+              required
+              autocomplete="off"
+            />
+            <input
+              class="input"
+              placeholder="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="off"
+            />
+            <input
+              class="input"
+              placeholder="mobile number"
+              name="mobile number"
+              type="number"
+              required
+              autocomplete="off"
+              minlength="8"
+            />
+            <label class="checkbox">
+              <input type="checkbox" name="checkbox" required />
+              <span>accept</span>
+              <a
+                href="https://lottostar.co.za/terms-and-conditions"
+                target="_blank"
+                style="margin-left: 5px"
+              >
+                t's & c's</a
+              >
+            </label>
+          </section>
+        </article>
+
+        <section style="display: flex; max-width: 345px; margin-left: auto">
+          <button class="btn submit" type="submit" value="Submit">
+            submit now
+          </button>
+        </section>
+      </form>
+    </article>
+
     <script src="./index.js"></script>
+    <script src="./js/css-var-calc.js"></script>
   </body>
 </html>
