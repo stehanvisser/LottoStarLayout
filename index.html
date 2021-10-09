@@ -32,14 +32,14 @@
     </div>
 
     <div style="position: absolute; top: var(--form-top)">
-      <article>
+      <article class="form-card">
         <form
-          class="form-card"
           name="userInfoForm"
-          onsubmit="validateForm()"
+          onsubmit="validateForm(event)"
           method="post"
+          id="main-form"
         >
-          <div style="text-align: center; margin-bottom: 40px">
+          <div class="info-text-container">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
             euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
             Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
@@ -47,7 +47,6 @@
             maximus, diam non vehicula imperdiet, nunc purus dapibus est, eu
             efficitur orci dolor eu turpis.
           </div>
-
           <article>
             <section class="heading-container">
               <img src="assets/icons/question.svg" alt="question" />
@@ -139,6 +138,32 @@
             </button>
           </section>
         </form>
+
+        <section id="form-submitted" style="display: none">
+          <div class="sumbitted-header">your answer has been submitted</div>
+          <div class="info-text-container" style="height: 66px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+            euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
+          </div>
+
+          <section style="display: flex; justify-content: center">
+            <button
+              class="secondary-btn"
+              onclick="register()"
+              style="margin-right: 20px"
+            >
+              register & bet now
+            </button>
+
+            <button
+              class="secondary-btn"
+              onclick="login()"
+              style="background: var(--primary-color)"
+            >
+              login & bet now
+            </button>
+          </section>
+        </section>
       </article>
 
       <article class="bottom-card-outer">
@@ -169,6 +194,15 @@
           </section>
         </section>
       </article>
+
+      <div class="footer-container">
+        <div style="margin-left: auto; margin-right: auto">
+          LottoStar is licensed by the Mpumalanga Economic Regulator. No
+          under18’s. National Responsible Gambling Programme 0800 006 008. You
+          are not playing directly in these lotteries but rather betting on the
+          outcome or result of such lotteries.
+        </div>
+      </div>
     </div>
 
     <script src="./index.js"></script>

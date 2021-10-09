@@ -67,6 +67,20 @@ input[type="number"] {
   font-weight: bold;
 }
 
+.secondary-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  height: 60px;
+  background: #00aeef;
+  border-radius: 30px;
+  width: 345px;
+}
+
 .btn:hover {
   background: linear-gradient(180deg, #470052 0%, #33033b 100%);
 }
@@ -86,4 +100,16 @@ input[type="number"] {
   margin-top: 9.9%;
   margin-left: auto;
   margin-right: 8.2%;
+}
+
+.footer-container {
+  height: 60px;
+  background: linear-gradient(180deg, #5c006a 0%, #44034f 100%);
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 30px 9px 30px;
+  display: flex;
+  align-items: center;
+  bottom: 0;
 }
