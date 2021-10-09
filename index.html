@@ -8,10 +8,16 @@
     <link rel="icon" type="image/jpg" href="favicon.jpg" />
     <title>LottoStar</title>
     <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./styles/bottom-card.css" />
+    <link rel="stylesheet" href="./styles/form-card.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -25,130 +31,149 @@
       />
     </div>
 
-    <article>
-      <form
-        class="form-card"
-        name="userInfoForm"
-        onsubmit="validateForm()"
-        method="post"
-      >
-        <div style="text-align: center; margin-bottom: 40px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
-          euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
-          Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
-          Nullam et congue quam. Quisque luctus egestas gravida. Quisque
-          maximus, diam non vehicula imperdiet, nunc purus dapibus est, eu
-          efficitur orci dolor eu turpis.
-        </div>
-
-        <article style="margin-bottom: 30px">
-          <section
-            style="
-              display: grid;
-              align-items: center;
-              margin-bottom: 20px;
-              grid-template-columns: auto auto 1fr;
-            "
-          >
-            <img src="assets/icons/question.svg" alt="question" />
-            <h1>
-              Name one lottery game that you can beat on
-              <a href="https://lottostar.co.za/" target="_blank"
-                >lottostar.co.za</a
-              >
-            </h1>
-            <div class="divider-line"></div>
-          </section>
-
-          <div style="max-width: 397px">
-            <input
-              class="input"
-              placeholder="e.g lottery"
-              name="lotteryGame"
-              autocomplete="off"
-              required
-            />
+    <div style="position: absolute; top: var(--form-top)">
+      <article>
+        <form
+          class="form-card"
+          name="userInfoForm"
+          onsubmit="validateForm()"
+          method="post"
+        >
+          <div style="text-align: center; margin-bottom: 40px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+            euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
+            Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
+            Nullam et congue quam. Quisque luctus egestas gravida. Quisque
+            maximus, diam non vehicula imperdiet, nunc purus dapibus est, eu
+            efficitur orci dolor eu turpis.
           </div>
-        </article>
 
-        <article style="margin-bottom: 30px">
-          <section
-            style="
-              display: grid;
-              align-items: center;
-              margin-bottom: 20px;
-              grid-template-columns: auto auto 1fr;
-            "
-          >
-            <img src="assets/icons/pencil.svg" alt="question" />
-            <h1>Tell us who you are</h1>
-            <div class="divider-line"></div>
+          <article>
+            <section class="heading-container">
+              <img src="assets/icons/question.svg" alt="question" />
+              <h1>
+                Name one lottery game that you can beat on
+                <a href="https://lottostar.co.za/" target="_blank"
+                  >lottostar.co.za</a
+                >
+              </h1>
+              <div class="divider-line"></div>
+            </section>
+
+            <div style="max-width: 397px">
+              <input
+                class="input"
+                placeholder="e.g lottery"
+                name="lotteryGame"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </article>
+
+          <article>
+            <section class="heading-container">
+              <img src="assets/icons/pencil.svg" alt="question" />
+              <h1>Tell us who you are</h1>
+              <div class="divider-line"></div>
+            </section>
+
+            <section class="user-info-input-grid">
+              <input
+                class="input"
+                placeholder="id number"
+                name="idNumber"
+                type="number"
+                autocomplete="off"
+                minlength="13"
+                required
+              />
+              <input
+                class="input"
+                placeholder="name"
+                name="firstname"
+                required
+                autocomplete="off"
+              />
+              <input
+                class="input"
+                placeholder="surname"
+                name="surname"
+                required
+                autocomplete="off"
+              />
+              <input
+                class="input"
+                placeholder="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="off"
+              />
+              <input
+                class="input"
+                placeholder="mobile number"
+                name="mobile number"
+                type="number"
+                required
+                autocomplete="off"
+                minlength="8"
+              />
+              <label class="checkbox">
+                <input type="checkbox" name="checkbox" required />
+                <span>accept</span>
+                <a
+                  href="https://lottostar.co.za/terms-and-conditions"
+                  target="_blank"
+                  style="margin-left: 5px"
+                >
+                  t's & c's</a
+                >
+              </label>
+            </section>
+          </article>
+
+          <section class="submit-btn-container">
+            <button class="btn submit" type="submit" value="Submit">
+              submit now
+            </button>
           </section>
+        </form>
+      </article>
 
-          <section class="user-info-input-grid">
-            <input
-              class="input"
-              placeholder="id number"
-              name="idNumber"
-              type="number"
-              autocomplete="off"
-              minlength="13"
-              required
-            />
-            <input
-              class="input"
-              placeholder="name"
-              name="firstname"
-              required
-              autocomplete="off"
-            />
-            <input
-              class="input"
-              placeholder="surname"
-              name="surname"
-              required
-              autocomplete="off"
-            />
-            <input
-              class="input"
-              placeholder="email"
-              name="email"
-              type="email"
-              required
-              autocomplete="off"
-            />
-            <input
-              class="input"
-              placeholder="mobile number"
-              name="mobile number"
-              type="number"
-              required
-              autocomplete="off"
-              minlength="8"
-            />
-            <label class="checkbox">
-              <input type="checkbox" name="checkbox" required />
-              <span>accept</span>
-              <a
-                href="https://lottostar.co.za/terms-and-conditions"
-                target="_blank"
-                style="margin-left: 5px"
-              >
-                t's & c's</a
-              >
-            </label>
+      <article class="bottom-card-outer">
+        <section class="bottom-card-inner">
+          <section class="bottom-card">
+            <div class="bottom-card-container">
+              <div class="charity-img-container">
+                <img src="assets/images/charity.png" style="width: 100%" />
+              </div>
+              <div class="bottom-card-right-container">
+                <div class="heading-text">raised for charity</div>
+                <div class="heading-divider"></div>
+
+                <section
+                  style="display: flex; margin-bottom: 34px"
+                  id="output_div"
+                ></section>
+
+                <section class="learn-more-container">
+                  <button class="btn learn-more">Learn more</button>
+                </section>
+
+                <div class="coporate-social-text">
+                  corporate social responsibility Total contributions
+                </div>
+              </div>
+            </div>
           </section>
-        </article>
-
-        <section style="display: flex; max-width: 345px; margin-left: auto">
-          <button class="btn submit" type="submit" value="Submit">
-            submit now
-          </button>
         </section>
-      </form>
-    </article>
+      </article>
+    </div>
 
     <script src="./index.js"></script>
     <script src="./js/css-var-calc.js"></script>
+
+    <script src="./js/value-raised.js"></script>
   </body>
 </html>
