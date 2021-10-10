@@ -31,7 +31,7 @@
       />
     </div>
 
-    <div style="position: absolute; top: var(--form-top)">
+    <div style="position: absolute; top: var(--form-top); width: 100%">
       <article class="form-card">
         <form
           name="userInfoForm"
@@ -140,13 +140,13 @@
         </form>
 
         <section id="form-submitted" style="display: none">
-          <div class="sumbitted-header">your answer has been submitted</div>
+          <div class="submitted-header">your answer has been submitted</div>
           <div class="info-text-container" style="height: 66px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
             euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis ipsum.
           </div>
 
-          <section style="display: flex; justify-content: center">
+          <section class="submitted-form-btn-container">
             <button
               class="secondary-btn"
               onclick="register()"
@@ -155,11 +155,7 @@
               register & bet now
             </button>
 
-            <button
-              class="secondary-btn"
-              onclick="login()"
-              style="background: var(--primary-color)"
-            >
+            <button class="secondary-btn primary-color-btn" onclick="login()">
               login & bet now
             </button>
           </section>

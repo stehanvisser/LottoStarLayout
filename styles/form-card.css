@@ -7,6 +7,7 @@
   margin-bottom: 39px;
   margin-left: 108px;
   margin-right: 108px;
+  justify-content: center;
 }
 
 .heading-container {
@@ -81,12 +82,17 @@
   margin-left: auto;
 }
 
-.sumbitted-header {
+.submitted-header {
   color: var(--primary-color);
   font-weight: bold;
   text-align: center;
   font-size: 17px;
   text-transform: uppercase;
+}
+
+.submitted-form-btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -99,10 +105,20 @@
   .user-info-input-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media screen and (max-width: 500px) {
   .form-card {
     margin: 0px 16px 30px 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .submitted-form-btn-container {
+    flex-direction: column;
+  }
+
+  .info-text-container {
+    margin-left: unset;
+    margin-right: unset;
+    height: unset;
   }
 }

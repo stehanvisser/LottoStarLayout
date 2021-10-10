@@ -79,6 +79,19 @@ input[type="number"] {
   background: #00aeef;
   border-radius: 30px;
   width: 345px;
+  cursor: pointer;
+}
+
+.primary-color-btn {
+  background: var(--primary-color) !important;
+}
+
+.primary-color-btn:hover {
+  background: #f3d300 !important;
+}
+
+.secondary-btn:hover {
+  background: #00a1db;
 }
 
 .btn:hover {
@@ -103,7 +116,7 @@ input[type="number"] {
 }
 
 .footer-container {
-  height: 60px;
+  min-height: 60px;
   background: linear-gradient(180deg, #5c006a 0%, #44034f 100%);
   font-size: 12px;
   text-align: center;
